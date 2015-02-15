@@ -36,4 +36,4 @@ func main() {
 
 ```
 
-**Godoc :** http://godoc.org/github.com/guillaumewuip/console_scribeAmqp
+**Godoc :** http://godoc.org/github.com/guillaumewuip/console_scribeAmqp.go
