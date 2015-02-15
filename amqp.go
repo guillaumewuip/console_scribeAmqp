@@ -1,3 +1,5 @@
+//A hook for console.go that send all logs over AMQP
+//(by example to a Scribe.js server)
 package console_scribeAmqp
 
 import (
@@ -22,14 +24,10 @@ type Log struct {
 	Message  string `json:"message"`
 }
 
-// AmqpOptions{
-//	"server"          : "amqp://localhost",
-//  "rountingKey"     : "",
-//  "exchange"        : "",
-//  "exchangeType"    : "",
-// }
+//Stores amqp options
 type AmqpOptions map[string]string
 
+//Open amqp connection and return an hook that send log to an AMQP queue
 func AmqpHook(options AmqpOptions) (func(logger console.Logger) error, error) {
 
 	var err error
