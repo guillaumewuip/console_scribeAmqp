@@ -35,3 +35,5 @@ func main() {
 }
 
 ```
+
+**Godoc :** http://godoc.org/github.com/guillaumewuip/console_scribeAmqp
